@@ -2096,6 +2096,41 @@ body {
   letter-spacing: 0.08em;
   text-align: center;
 }
+
+
+/* Dedicated anniversary video message */
+.video-message {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-message__card {
+  text-align: center;
+}
+
+.video-message__card h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.video-message__video {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  max-height: 65vh;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.video-message__text {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 (function () {
   function setupCaseInterface() {
@@ -2997,7 +3032,7 @@ There is one final thing to finish this investigation.
   &lt;video class=&quot;home-hero__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;home-landscape.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;Eyyy.mp4&quot; type=&quot;video/mp4&quot;&gt;
   
   &lt;/video&gt;&lt;div class=&quot;home-hero__shade&quot; aria-hidden=&quot;true&quot;&gt;
 
@@ -3079,7 +3114,25 @@ There is one final thing to finish this investigation.
      
          &lt;/section&gt;
   &lt;/main&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Video Message" tags="" position="575,525" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Memories" tags="" position="400,200" size="100,100">&lt;video class=&quot;scene__video&quot;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Video Message" tags="" position="575,525" size="100,100">&lt;div class=&quot;scene video-message&quot;&gt;
+
+  &lt;main class=&quot;scene__content&quot;&gt;
+    &lt;section class=&quot;scene__card video-message__card&quot;&gt;
+
+      &lt;h1&gt;A MESSAGE FOR YOU
+
+      &lt;/h1&gt;&lt;video class=&quot;video-message__video&quot;
+             controls playsinline preload=&quot;metadata&quot;&gt;
+        &lt;source src=&quot;video/Video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+        Your browser does not support this video.
+      
+      &lt;/video&gt;&lt;p class=&quot;video-message__text&quot;&gt;
+        Happy 4th Anniversary, Schatzzzyyyy. I love you so much.
+      &lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Memories" tags="" position="400,200" size="100,100">&lt;video class=&quot;scene__video&quot;
        autoplay muted loop playsinline
        preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
   &lt;source src=&quot;spin.mp4&quot; type=&quot;video/mp4&quot;&gt;
